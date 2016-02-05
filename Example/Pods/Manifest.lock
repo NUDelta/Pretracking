@@ -1,0 +1,14 @@
+PODS:
+  - Pretracking (0.1.0)
+
+DEPENDENCIES:
+  - Pretracking (from `../`)
+
+EXTERNAL SOURCES:
+  Pretracking:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Pretracking: 184cd720729d0bb572631d8a3d606d2a5d52b8dc
+
+COCOAPODS: 0.39.0
