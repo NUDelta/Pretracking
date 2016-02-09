@@ -33,7 +33,7 @@ it, simply add the following line to your Podfile:
 pod "Pretracking"
 ```
 
-## Todo
+## Future Improvements
 - enable background tracking
 - add local notification to the ```notifyPeople()```
 
