@@ -1,5 +1,5 @@
 # Pretracking
-Pretracking, a location manager that only starts fine-grained monitoring as a user are within a region of interest, and make decision based on current context. For the moment, only distance feature is implemented by default.
+Pretracking, a location manager that starts fine-grained monitoring when a user is within a region of interest, and make decision based on current context. For the moment, only distance feature is implemented by default.
 
 [![CI Status](http://img.shields.io/travis/YK/Pretracking.svg?style=flat)](https://travis-ci.org/YK/Pretracking)
 [![Version](https://img.shields.io/cocoapods/v/Pretracking.svg?style=flat)](http://cocoapods.org/pods/Pretracking)
@@ -16,7 +16,7 @@ Example:
 setupParameters(distance: Double, latitude: Double, longitude: Double, radius: Double, accuracy: CLLocationAccuracy)
 ```
 
-- modify ```notifyPeople()``` in MyPretracker.swft
+- modify ```notifyPeople()``` in MyPretracker.swift
 
 
 ## Requirements
@@ -32,6 +32,11 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod "Pretracking"
 ```
+
+## Todo
+- enable background tracking
+- add local notification to the ```notifyPeople()```
+
 
 ## Author
 
