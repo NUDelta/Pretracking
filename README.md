@@ -37,11 +37,6 @@ pod "Pretracking"
 - enable background tracking
 - add local notification to the ```notifyPeople()```
 
-
-## Author
-
-YK, yk@u.northwestern.edu
-
 ## License
 
 Pretracking is available under the MIT license. See the LICENSE file for more info.
