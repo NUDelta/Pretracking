@@ -54,6 +54,13 @@ public class Tracker: NSObject, CLLocationManagerDelegate{
         locationManager.startUpdatingLocation()
     }
     
+    public func addLocation(distanc: Double, latitude: Double, longitude: Double, radius: Double, name: String) {
+        let center = CLLocationCoordinate2DMake(latitude, longitude)
+        let monitoringRegion = CLCircularRegion.init(center: center, radius: radius, identifier: name)
+        locationManager.startMonitoringForRegion(monitoringRegion)
+        locationManager.startUpdatingLocation()
+    }
+    
     public func notifyPeople() {
         print("do your thing here")
     }

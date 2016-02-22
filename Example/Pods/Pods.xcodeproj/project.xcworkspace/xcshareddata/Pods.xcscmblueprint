@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "9076F2A65BFAC64D5FA7D233E98754D3E446DF4F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "6F2DEAB601A737E896623763E294904C3E97A7A9" : 0,
+    "9076F2A65BFAC64D5FA7D233E98754D3E446DF4F" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "7ACA7CEB-0461-4923-895A-A2D556723A0E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "6F2DEAB601A737E896623763E294904C3E97A7A9" : "..",
+    "9076F2A65BFAC64D5FA7D233E98754D3E446DF4F" : "Pretracking\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Pods",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Example\/Pods\/Pods.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/git.heroku.com\/gentle-escarpment-77006.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6F2DEAB601A737E896623763E294904C3E97A7A9"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:NUDelta\/Pretracking.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9076F2A65BFAC64D5FA7D233E98754D3E446DF4F"
+    }
+  ]
+}
