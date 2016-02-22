@@ -16,6 +16,16 @@ Example:
 setupParameters(distance: Double, latitude: Double, longitude: Double, radius: Double, accuracy: CLLocationAccuracy)
 ```
 
+- add locations to monitor
+```swift
+addLocation(distance: Double, latitude: Double, longitude: Double, radius: Double, name: String)
+```
+
+- remove location with location name
+```swift
+removeLocation(name: String)
+```
+
 - modify ```notifyPeople()``` in MyPretracker.swift
 
 
