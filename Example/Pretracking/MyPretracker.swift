@@ -19,8 +19,7 @@ class MyPretracker: Tracker {
 //        static let sharedManager = MyPretracker()
 //    }
     
-//    static let mySharedManager = MyPretracker()
-    
+    static let mySharedManager = MyPretracker()
     override func notifyPeople() {
         print("override this function")
     }
