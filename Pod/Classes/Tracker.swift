@@ -85,8 +85,8 @@ public class Tracker: NSObject, CLLocationManagerDelegate{
         self.locationDic.removeValueForKey(name)
     }
     
-    public func notifyPeople() {
-        print("do your thing here")
+    public func notifyPeople(region: CLRegion) {
+        print("you are close to region \(region)")
     }
     
     public func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -109,7 +109,7 @@ public class Tracker: NSObject, CLLocationManagerDelegate{
                 let distance = self.locationDic[monitorRegion.identifier]
 //                print("distance is \(distanceToLocation)")
                 if (distanceToLocation <= distance) {
-                    notifyPeople()
+                    notifyPeople(monitorRegion)
 //                    print("distance threshold is: \(distance)")
                 }
             }
