@@ -14,7 +14,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        MyPretracker.mySharedManager.setupParameters(10000, latitude: 42.047995, longitude: -87.680586, radius: 100, accuracy: 100, name: "new location")
+        MyPretracker.mySharedManager.setupParameters(10000, latitude: 42.047995, longitude: -87.680586, radius: 100, accuracy: 0.1, name: "new location")
         MyPretracker.mySharedManager.initLocationManager()
         
         //add location

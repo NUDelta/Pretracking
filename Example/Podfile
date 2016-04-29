@@ -8,5 +8,5 @@ end
 target 'Pretracking_Tests', :exclusive => true do
   pod 'Pretracking', :path => '../'
 
-  
+
 end

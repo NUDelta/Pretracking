@@ -8,6 +8,7 @@
 
 import Foundation
 import Pretracking
+import CoreLocation
 
 class MyPretracker: Tracker {
     
@@ -20,8 +21,9 @@ class MyPretracker: Tracker {
 //    }
     
     static let mySharedManager = MyPretracker()
-    override func notifyPeople() {
-        print("override this function")
+    override func notifyPeople(region: CLRegion) {
+        let date = NSDate()
+        print("notification at \(date) for region \(region)")
     }
     
 }

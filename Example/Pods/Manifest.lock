@@ -1,14 +1,14 @@
 PODS:
-  - Pretracking (0.1.0)
+  - Pretracking (0.1.4)
 
 DEPENDENCIES:
   - Pretracking (from `../`)
 
 EXTERNAL SOURCES:
   Pretracking:
-    :path: "../"
+    :path: ../
 
 SPEC CHECKSUMS:
-  Pretracking: 184cd720729d0bb572631d8a3d606d2a5d52b8dc
+  Pretracking: b421a3447249c9a7af8b3d4bfd2165e542dfc042
 
 COCOAPODS: 0.39.0

@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '1B5D9AC1F9697EEFF3BA9943'
+               BlueprintIdentifier = 'CDA37C1AD9511D079DEF6DFE'
                BlueprintName = 'Pretracking'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pretracking.framework'>
