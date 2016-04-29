@@ -56,6 +56,11 @@ public class Tracker: NSObject, CLLocationManagerDelegate{
         print("init location manager here")
         locationManager.requestAlwaysAuthorization()
         locationManager.requestWhenInUseAuthorization()
+        if #available(iOS 9.0, *) {
+            locationManager.allowsBackgroundLocationUpdates = true
+        } else {
+            // Fallback on earlier versions
+        }
         
         clearAllMonitoredRegions()
         
@@ -92,11 +97,8 @@ public class Tracker: NSObject, CLLocationManagerDelegate{
     public func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let lastLocation = locations.last!
         let age = -lastLocation.timestamp.timeIntervalSinceNow
-        if (lastLocation.horizontalAccuracy < 0 || lastLocation.horizontalAccuracy > 65.0) {
-            return
-        }
         
-        if (age > 20) {
+        if (lastLocation.horizontalAccuracy < 0 || lastLocation.horizontalAccuracy > 65.0 || age > 20) {
             return
         }
         
@@ -124,6 +126,7 @@ public class Tracker: NSObject, CLLocationManagerDelegate{
     
     public func locationManager(manager: CLLocationManager, didEnterRegion region: CLRegion) {
         locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
+        
         print("did enter region \(region.identifier)")
     }
     
