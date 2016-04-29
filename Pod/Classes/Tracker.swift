@@ -46,10 +46,18 @@ public class Tracker: NSObject, CLLocationManagerDelegate{
         
     }
     
+    public func clearAllMonitoredRegions() {
+        for region in locationManager.monitoredRegions {
+            locationManager.stopMonitoringForRegion(region)
+        }
+    }
+    
     public func initLocationManager() {
         print("init location manager here")
         locationManager.requestAlwaysAuthorization()
         locationManager.requestWhenInUseAuthorization()
+        
+        clearAllMonitoredRegions()
         
         let center = CLLocationCoordinate2DMake(self.latitude!, self.longitude!)
         let monitoringRegion = CLCircularRegion.init(center: center, radius: 100, identifier: self.loc_name!)
