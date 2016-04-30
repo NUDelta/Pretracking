@@ -73,7 +73,7 @@ public class Tracker: NSObject, CLLocationManagerDelegate {
         let center = CLLocationCoordinate2DMake(self.latitude!, self.longitude!)
         let monitoringRegion = CLCircularRegion.init(center: center, radius: 100, identifier: self.loc_name!)
         
-//        locationManager.startMonitoringForRegion(monitoringRegion)
+        locationManager.startMonitoringForRegion(monitoringRegion)
         locationManager.startUpdatingLocation()
     }
     
@@ -148,7 +148,8 @@ public class Tracker: NSObject, CLLocationManagerDelegate {
     }
     
     private func outOfAllRegions() -> Bool {
-        for (region, regionInfo) in self.locationDic {
+        print("checking all regions")
+        for (_, regionInfo) in self.locationDic {
             if regionInfo["withinRegion"] as! Bool{
                 return false
             }
