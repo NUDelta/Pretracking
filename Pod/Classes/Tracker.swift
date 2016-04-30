@@ -7,16 +7,22 @@
 //
 import CoreLocation
 
-public class Tracker: NSObject, CLLocationManagerDelegate{
-    var distance: Double?
+public class Tracker: NSObject, CLLocationManagerDelegate {
+    public var distance: Double = 20.0
+    public var radius: Double = 200.0
+    public var accuracy: Double = kCLLocationAccuracyHundredMeters
+    
     var latitude: Double?
     var longitude: Double?
-    var radius: Double?
-    var accuracy: Double?
+    
     var loc_name: String?
-    var locationDic: Dictionary<String,Double> = [:]
+    var locationDic: [String: [String: Any]] = [:]
     private var myLocation = CLLocation()
     private let locationManager = CLLocationManager()
+    
+    public func getDistance() -> Double? {
+        return self.distance
+    }
     
     required public override init() {
         super.init()
@@ -40,8 +46,8 @@ public class Tracker: NSObject, CLLocationManagerDelegate{
         myLocation = CLLocation(latitude: self.latitude!, longitude: self.longitude!)
         self.accuracy = accuracy
         self.loc_name = name
-        locationManager.desiredAccuracy = self.accuracy!
-        self.locationDic[name] = distance
+        locationManager.desiredAccuracy = self.accuracy
+        self.locationDic[name] = ["distance": distance, "withinRegion": false, "notifiedForRegion": false]
         print("initialization")
         
     }
@@ -67,7 +73,7 @@ public class Tracker: NSObject, CLLocationManagerDelegate{
         let center = CLLocationCoordinate2DMake(self.latitude!, self.longitude!)
         let monitoringRegion = CLCircularRegion.init(center: center, radius: 100, identifier: self.loc_name!)
         
-        locationManager.startMonitoringForRegion(monitoringRegion)
+//        locationManager.startMonitoringForRegion(monitoringRegion)
         locationManager.startUpdatingLocation()
     }
     
@@ -75,7 +81,7 @@ public class Tracker: NSObject, CLLocationManagerDelegate{
         let center = CLLocationCoordinate2DMake(latitude, longitude)
         let monitoringRegion = CLCircularRegion.init(center: center, radius: radius, identifier: name)
         locationManager.startMonitoringForRegion(monitoringRegion)
-        self.locationDic[name] = distance
+        self.locationDic[name] = ["distance": distance, "withinRegion": false, "notifiedForRegion": false]
     }
     
     public func removeLocation(name: String) {
@@ -84,7 +90,6 @@ public class Tracker: NSObject, CLLocationManagerDelegate{
             if name == region.identifier {
                 locationManager.stopMonitoringForRegion(region)
                 print("stopped monitoring \(name)")
-//                print(locationManager.monitoredRegions)
             }
         }
         self.locationDic.removeValueForKey(name)
@@ -107,12 +112,14 @@ public class Tracker: NSObject, CLLocationManagerDelegate{
                 let monitorLocation = CLLocation(latitude: monitorRegion.center.latitude, longitude: monitorRegion.center.longitude)
                 
                 let distanceToLocation = lastLocation.distanceFromLocation(monitorLocation)
-//                print(self.locationDic)
-                let distance = self.locationDic[monitorRegion.identifier]
-//                print("distance is \(distanceToLocation)")
-                if (distanceToLocation <= distance) {
+                
+                let currentLocationInfo = self.locationDic[monitorRegion.identifier]!
+                let distance = currentLocationInfo["distance"] as! Double
+                let hasBeenNotifiedForRegion = currentLocationInfo["notifiedForRegion"] as! Bool
+                
+                if (distanceToLocation <= distance && !hasBeenNotifiedForRegion) {
                     notifyPeople(monitorRegion)
-//                    print("distance threshold is: \(distance)")
+                    self.locationDic[monitorRegion.identifier]!["notifiedForRegion"] = true
                 }
             }
 
@@ -126,13 +133,27 @@ public class Tracker: NSObject, CLLocationManagerDelegate{
     
     public func locationManager(manager: CLLocationManager, didEnterRegion region: CLRegion) {
         locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
-        
+        self.locationDic[region.identifier]!["withinRegion"] = true
         print("did enter region \(region.identifier)")
     }
     
     public func locationManager(manager: CLLocationManager, didExitRegion region: CLRegion) {
-        locationManager.desiredAccuracy = self.accuracy!
         print("did exit region \(region.identifier)")
+        self.locationDic[region.identifier]!["withinRegion"] = false
+        self.locationDic[region.identifier]!["notifiedForRegion"] = false
+        
+        if outOfAllRegions() {
+            locationManager.desiredAccuracy = self.accuracy
+        }
+    }
+    
+    private func outOfAllRegions() -> Bool {
+        for (region, regionInfo) in self.locationDic {
+            if regionInfo["withinRegion"] as! Bool{
+                return false
+            }
+        }
+        return true
     }
     
 }
