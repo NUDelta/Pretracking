@@ -85,14 +85,19 @@ public class Tracker: NSObject, CLLocationManagerDelegate {
     }
     
     public func removeLocation(name: String) {
-        let monitoredRegion = locationManager.monitoredRegions
-        for region in monitoredRegion {
-            if name == region.identifier {
-                locationManager.stopMonitoringForRegion(region)
-                print("stopped monitoring \(name)")
+        if self.locationDic.removeValueForKey(name) != nil {
+            print("remove location exists")
+            let monitoredRegion = locationManager.monitoredRegions
+            print(monitoredRegion)
+            for region in monitoredRegion {
+                print(region.identifier)
+                print(name)
+                if name == region.identifier {
+                    locationManager.stopMonitoringForRegion(region)
+                    print("stopped monitoring \(name)")
+                }
             }
         }
-        self.locationDic.removeValueForKey(name)
     }
     
     public func notifyPeople(region: CLRegion) {
@@ -113,13 +118,14 @@ public class Tracker: NSObject, CLLocationManagerDelegate {
                 
                 let distanceToLocation = lastLocation.distanceFromLocation(monitorLocation)
                 
-                let currentLocationInfo = self.locationDic[monitorRegion.identifier]!
-                let distance = currentLocationInfo["distance"] as! Double
-                let hasBeenNotifiedForRegion = currentLocationInfo["notifiedForRegion"] as! Bool
-                
-                if (distanceToLocation <= distance && !hasBeenNotifiedForRegion) {
-                    notifyPeople(monitorRegion)
-                    self.locationDic[monitorRegion.identifier]!["notifiedForRegion"] = true
+                if let currentLocationInfo = self.locationDic[monitorRegion.identifier] {
+                    let distance = currentLocationInfo["distance"] as! Double
+                    let hasBeenNotifiedForRegion = currentLocationInfo["notifiedForRegion"] as! Bool
+                    
+                    if (distanceToLocation <= distance && !hasBeenNotifiedForRegion) {
+                        notifyPeople(monitorRegion)
+                        self.locationDic[monitorRegion.identifier]?["notifiedForRegion"] = true
+                    }
                 }
             }
 
@@ -133,14 +139,14 @@ public class Tracker: NSObject, CLLocationManagerDelegate {
     
     public func locationManager(manager: CLLocationManager, didEnterRegion region: CLRegion) {
         locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
-        self.locationDic[region.identifier]!["withinRegion"] = true
+        self.locationDic[region.identifier]?["withinRegion"] = true
         print("did enter region \(region.identifier)")
     }
     
     public func locationManager(manager: CLLocationManager, didExitRegion region: CLRegion) {
         print("did exit region \(region.identifier)")
-        self.locationDic[region.identifier]!["withinRegion"] = false
-        self.locationDic[region.identifier]!["notifiedForRegion"] = false
+        self.locationDic[region.identifier]?["withinRegion"] = false
+        self.locationDic[region.identifier]?["notifiedForRegion"] = false
         
         if outOfAllRegions() {
             locationManager.desiredAccuracy = self.accuracy

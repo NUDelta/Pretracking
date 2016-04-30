@@ -22,6 +22,9 @@ class ViewController: UIViewController {
         MyPretracker.mySharedManager.addLocation(10000, latitude: 42.047995, longitude: -87.686, radius: 50, name: "Test Region")
         MyPretracker.mySharedManager.addLocation(10000, latitude: 42.047995, longitude: -87.686, radius: 50, name: "Test Region 2")
         MyPretracker.mySharedManager.addLocation(10000, latitude: 42.047995, longitude: -87.686, radius: 50, name: "Test Region 3")
+        
+        // remove location
+        MyPretracker.mySharedManager.removeLocation("Test Region 2")
     }
 
     override func didReceiveMemoryWarning() {
