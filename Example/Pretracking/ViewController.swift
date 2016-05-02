@@ -14,14 +14,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        MyPretracker.mySharedManager.setupParameters(10000, latitude: 42.047995, longitude: -87.680586, radius: 100, accuracy: kCLLocationAccuracyHundredMeters, name: "new location")
+
+        MyPretracker.mySharedManager.setupParameters(15, radius: 130, accuracy: kCLLocationAccuracyHundredMeters)
         MyPretracker.mySharedManager.initLocationManager()
         
         //add location
-        MyPretracker.mySharedManager.addLocation(10000, latitude: 42.047995, longitude: -87.686, radius: 50, name: "Test Region")
-        MyPretracker.mySharedManager.addLocation(10000, latitude: 42.047995, longitude: -87.686, radius: 50, name: "Test Region 2")
-        MyPretracker.mySharedManager.addLocation(10000, latitude: 42.047995, longitude: -87.686, radius: 50, name: "Test Region 3")
+        MyPretracker.mySharedManager.addLocation(nil, latitude: 42.047995, longitude: -87.686, radius: nil, name: "Test Region")
+        MyPretracker.mySharedManager.addLocation(nil, latitude: 42.047995, longitude: -87.686, radius: nil, name: "Test Region 2")
+        MyPretracker.mySharedManager.addLocation(nil, latitude: 42.047995, longitude: -87.686, radius: nil, name: "Test Region 3")
         
         // remove location
         MyPretracker.mySharedManager.removeLocation("Test Region 2")

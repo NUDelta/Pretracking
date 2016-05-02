@@ -12,10 +12,6 @@ public class Tracker: NSObject, CLLocationManagerDelegate {
     public var radius: Double = 200.0
     public var accuracy: Double = kCLLocationAccuracyHundredMeters
     
-    var latitude: Double?
-    var longitude: Double?
-    
-    var loc_name: String?
     var locationDic: [String: [String: Any]] = [:]
     private var myLocation = CLLocation()
     private let locationManager = CLLocationManager()
@@ -38,18 +34,13 @@ public class Tracker: NSObject, CLLocationManagerDelegate {
         static let sharedManager = Tracker()
     }
     
-    public func setupParameters(distance: Double, latitude: Double, longitude: Double, radius: Double, accuracy: CLLocationAccuracy, name: String) {
-        self.distance = distance
-        self.latitude = latitude
-        self.longitude = longitude
-        self.radius = radius
-        myLocation = CLLocation(latitude: self.latitude!, longitude: self.longitude!)
-        self.accuracy = accuracy
-        self.loc_name = name
-        locationManager.desiredAccuracy = self.accuracy
-        self.locationDic[name] = ["distance": distance, "withinRegion": false, "notifiedForRegion": false]
-        print("initialization")
+    public func setupParameters(distance: Double, radius: Double, accuracy: CLLocationAccuracy) {
+        print("Setting up tracker parameters")
         
+        self.distance = distance
+        self.radius = radius
+        self.accuracy = accuracy
+        locationManager.desiredAccuracy = self.accuracy
     }
     
     public func clearAllMonitoredRegions() {
@@ -59,7 +50,9 @@ public class Tracker: NSObject, CLLocationManagerDelegate {
     }
     
     public func initLocationManager() {
-        print("init location manager here")
+        print("Initializating location manager")
+        
+        locationManager.activityType = CLActivityType.Fitness
         locationManager.requestAlwaysAuthorization()
         locationManager.requestWhenInUseAuthorization()
         if #available(iOS 9.0, *) {
@@ -69,19 +62,27 @@ public class Tracker: NSObject, CLLocationManagerDelegate {
         }
         
         clearAllMonitoredRegions()
-        
-        let center = CLLocationCoordinate2DMake(self.latitude!, self.longitude!)
-        let monitoringRegion = CLCircularRegion.init(center: center, radius: 100, identifier: self.loc_name!)
-        
-        locationManager.startMonitoringForRegion(monitoringRegion)
         locationManager.startUpdatingLocation()
     }
     
-    public func addLocation(distance: Double, latitude: Double, longitude: Double, radius: Double, name: String) {
-        let center = CLLocationCoordinate2DMake(latitude, longitude)
-        let monitoringRegion = CLCircularRegion.init(center: center, radius: radius, identifier: name)
-        locationManager.startMonitoringForRegion(monitoringRegion)
-        self.locationDic[name] = ["distance": distance, "withinRegion": false, "notifiedForRegion": false]
+    public func addLocation(distance: Double?, latitude: Double, longitude: Double, radius: Double?, name: String) {
+        // check if optional distance and radius values are set
+        var newLocationDistance: Double = self.distance
+        if let unwrappedDistance = distance {
+            newLocationDistance = unwrappedDistance
+        }
+        
+        var newLocationRadius: Double = self.radius
+        if let unwrappedRadius = radius {
+            newLocationRadius = unwrappedRadius
+        }
+        
+        // create and start monitoring new region
+        let newRegionCenter = CLLocationCoordinate2DMake(latitude, longitude)
+        let newRegionForMonitoring = CLCircularRegion.init(center: newRegionCenter, radius: newLocationRadius, identifier: name)
+        
+        locationManager.startMonitoringForRegion(newRegionForMonitoring)
+        self.locationDic[name] = ["distance": newLocationDistance, "withinRegion": false, "notifiedForRegion": false]
     }
     
     public func removeLocation(name: String) {
