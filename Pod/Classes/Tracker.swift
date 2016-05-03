@@ -10,11 +10,10 @@ import CoreLocation
 public class Tracker: NSObject, CLLocationManagerDelegate {
     public var distance: Double = 20.0
     public var radius: Double = 200.0
-    public var accuracy: Double = kCLLocationAccuracyHundredMeters
+    public var accuracy: Double = kCLLocationAccuracyNearestTenMeters
     
     var locationDic: [String: [String: Any]] = [:]
-    private var myLocation = CLLocation()
-    private let locationManager = CLLocationManager()
+    let locationManager = CLLocationManager()
     
     public func getDistance() -> Double? {
         return self.distance
@@ -34,13 +33,19 @@ public class Tracker: NSObject, CLLocationManagerDelegate {
         static let sharedManager = Tracker()
     }
     
-    public func setupParameters(distance: Double, radius: Double, accuracy: CLLocationAccuracy) {
+    public func setupParameters(distance: Double?, radius: Double?, accuracy: CLLocationAccuracy?) {
         print("Setting up tracker parameters")
         
-        self.distance = distance
-        self.radius = radius
-        self.accuracy = accuracy
-        locationManager.desiredAccuracy = self.accuracy
+        if let unwrappedDistance = distance {
+            self.distance = unwrappedDistance
+        }
+        if let unwrappedRadius = radius {
+            self.radius = unwrappedRadius
+        }
+        if let unwrappedAccurary = accuracy {
+            self.accuracy = unwrappedAccurary
+            locationManager.desiredAccuracy = self.accuracy
+        }
     }
     
     public func clearAllMonitoredRegions() {
@@ -63,6 +68,7 @@ public class Tracker: NSObject, CLLocationManagerDelegate {
         
         clearAllMonitoredRegions()
         locationManager.startUpdatingLocation()
+        locationManager.startMonitoringSignificantLocationChanges()
     }
     
     public func addLocation(distance: Double?, latitude: Double, longitude: Double, radius: Double?, name: String) {
