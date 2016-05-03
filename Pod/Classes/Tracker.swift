@@ -109,16 +109,16 @@ public class Tracker: NSObject, CLLocationManagerDelegate {
         print("you are close to region \(region)")
     }
     
-    public func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        let lastLocation = locations.last!
-        let age = -lastLocation.timestamp.timeIntervalSinceNow
-        
+    public func notifyIfWithinDistance(lastLocation: CLLocation) {
         print("User position \(lastLocation), course \(lastLocation.course) and, elevation \(lastLocation.altitude)")
         
+        // check if location update is recent and accurate enough
+        let age = -lastLocation.timestamp.timeIntervalSinceNow
         if (lastLocation.horizontalAccuracy < 0 || lastLocation.horizontalAccuracy > 65.0 || age > 20) {
             return
         }
         
+        // compute distance from current point to all monitored regions and notifiy if close enough
         for region in locationManager.monitoredRegions {
             if let monitorRegion = region as? CLCircularRegion {
                 let monitorLocation = CLLocation(latitude: monitorRegion.center.latitude, longitude: monitorRegion.center.longitude)
@@ -138,9 +138,11 @@ public class Tracker: NSObject, CLLocationManagerDelegate {
                     }
                 }
             }
-            
         }
-        
+    }
+    
+    public func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        notifyIfWithinDistance(locations.last!)
     }
     
     public func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
@@ -172,5 +174,4 @@ public class Tracker: NSObject, CLLocationManagerDelegate {
         }
         return true
     }
-    
 }
