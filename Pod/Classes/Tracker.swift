@@ -11,13 +11,10 @@ public class Tracker: NSObject, CLLocationManagerDelegate {
     public var distance: Double = 20.0
     public var radius: Double = 200.0
     public var accuracy: Double = kCLLocationAccuracyNearestTenMeters
+    public var currentTrackerAccuracy: Double = kCLLocationAccuracyNearestTenMeters
     
     var locationDic: [String: [String: Any]] = [:]
     let locationManager = CLLocationManager()
-    
-    public func getDistance() -> Double? {
-        return self.distance
-    }
     
     required public override init() {
         super.init()
@@ -45,6 +42,7 @@ public class Tracker: NSObject, CLLocationManagerDelegate {
         if let unwrappedAccurary = accuracy {
             self.accuracy = unwrappedAccurary
             locationManager.desiredAccuracy = self.accuracy
+            self.currentTrackerAccuracy = locationManager.desiredAccuracy
         }
     }
     
@@ -57,7 +55,6 @@ public class Tracker: NSObject, CLLocationManagerDelegate {
     public func initLocationManager() {
         print("Initializating location manager")
         
-        locationManager.activityType = CLActivityType.Fitness
         locationManager.requestAlwaysAuthorization()
         locationManager.requestWhenInUseAuthorization()
         if #available(iOS 9.0, *) {
@@ -68,7 +65,6 @@ public class Tracker: NSObject, CLLocationManagerDelegate {
         
         clearAllMonitoredRegions()
         locationManager.startUpdatingLocation()
-        locationManager.startMonitoringSignificantLocationChanges()
     }
     
     public func addLocation(distance: Double?, latitude: Double, longitude: Double, radius: Double?, name: String) {
@@ -152,6 +148,7 @@ public class Tracker: NSObject, CLLocationManagerDelegate {
     public func locationManager(manager: CLLocationManager, didEnterRegion region: CLRegion) {
         print("did enter region \(region.identifier)")
         locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
+        self.currentTrackerAccuracy = locationManager.desiredAccuracy
         self.locationDic[region.identifier]?["withinRegion"] = true
     }
     
@@ -162,6 +159,7 @@ public class Tracker: NSObject, CLLocationManagerDelegate {
         
         if outOfAllRegions() {
             locationManager.desiredAccuracy = self.accuracy
+            self.currentTrackerAccuracy = locationManager.desiredAccuracy
         }
     }
     
