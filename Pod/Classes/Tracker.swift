@@ -8,18 +8,21 @@
 import CoreLocation
 
 public class Tracker: NSObject, CLLocationManagerDelegate {
-    public var distance: Double = 20.0
+    public var distance: Double = 25.0
     public var radius: Double = 200.0
     public var accuracy: Double = kCLLocationAccuracyNearestTenMeters
-    public var currentTrackerAccuracy: Double = kCLLocationAccuracyNearestTenMeters
+    public var distanceFilter: Double = -1.0
     
     var locationDic: [String: [String: Any]] = [:]
     let locationManager = CLLocationManager()
     
+    private var isUsingLocationUpdate = false
+    
+    // MARK: Initializations
     required public override init() {
         super.init()
-        locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
         locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
     }
     
     public class var sharedManager: Tracker {
@@ -30,7 +33,7 @@ public class Tracker: NSObject, CLLocationManagerDelegate {
         static let sharedManager = Tracker()
     }
     
-    public func setupParameters(distance: Double?, radius: Double?, accuracy: CLLocationAccuracy?) {
+    public func setupParameters(distance: Double?, radius: Double?, accuracy: CLLocationAccuracy?, distanceFilter: Double?) {
         print("Setting up tracker parameters")
         
         if let unwrappedDistance = distance {
@@ -42,7 +45,10 @@ public class Tracker: NSObject, CLLocationManagerDelegate {
         if let unwrappedAccurary = accuracy {
             self.accuracy = unwrappedAccurary
             locationManager.desiredAccuracy = self.accuracy
-            self.currentTrackerAccuracy = locationManager.desiredAccuracy
+        }
+        if let unwrappedDistanceFilter = distanceFilter {
+            self.distanceFilter = unwrappedDistanceFilter
+            locationManager.distanceFilter = self.distanceFilter
         }
     }
     
@@ -53,20 +59,71 @@ public class Tracker: NSObject, CLLocationManagerDelegate {
     }
     
     public func initLocationManager() {
-        print("Initializating location manager")
-        
         locationManager.requestAlwaysAuthorization()
         locationManager.requestWhenInUseAuthorization()
         if #available(iOS 9.0, *) {
             locationManager.allowsBackgroundLocationUpdates = true
         } else {
-            // Fallback on earlier versions
+            // on earlier verions, startMonitoringSignificantLocationChanges will be used
         }
         
         clearAllMonitoredRegions()
+        
         locationManager.startUpdatingLocation()
+        self.isUsingLocationUpdate = true
+        
+        // print debug string with all location manager parameters
+        let locActivity = locationManager.activityType == .Other
+        let locAccuracy = locationManager.desiredAccuracy
+        let locDistance = locationManager.distanceFilter
+        let locationManagerParametersDebugString = "Manager Activity = \(locActivity)\n" +
+            "Manager Accuracy = \(locAccuracy)\n" +
+            "Manager Distance Filter = \(locDistance)\n"
+        
+        let authStatus = CLLocationManager.authorizationStatus() == .AuthorizedAlways
+        let locServicesEnabled = CLLocationManager.locationServicesEnabled()
+        let locSigChangeAvailable = CLLocationManager.significantLocationChangeMonitoringAvailable()
+        let locationManagerPermissionsDebugString = "Location manager setup with following parameters:\n" +
+            "Authorization = \(authStatus)\n" +
+            "Location Services Enabled = \(locServicesEnabled)\n" +
+            "Significant Location Change Enabled = \(locSigChangeAvailable)\n"
+        
+        print("Initialized Location Manager Information:\n" + locationManagerPermissionsDebugString + locationManagerParametersDebugString)
     }
     
+    public func changeTrackingMethod(iOS9: Bool, state: String) {
+        if iOS9 {
+            if state == "foreground" || state == "background" {
+                if !self.isUsingLocationUpdate {
+                    locationManager.stopMonitoringSignificantLocationChanges()
+                    locationManager.startUpdatingLocation()
+                    self.isUsingLocationUpdate = true
+                }
+            } else if state == "terminate" {
+                if self.isUsingLocationUpdate {
+                    locationManager.stopUpdatingLocation()
+                    self.isUsingLocationUpdate = false
+                }
+                locationManager.startMonitoringSignificantLocationChanges()
+            }
+        } else {
+            if state == "foreground" {
+                if !self.isUsingLocationUpdate {
+                    locationManager.stopMonitoringSignificantLocationChanges()
+                    locationManager.startUpdatingLocation()
+                    self.isUsingLocationUpdate = true
+                }
+            } else if state == "background" || state == "terminate" {
+                if self.isUsingLocationUpdate {
+                    locationManager.stopUpdatingLocation()
+                    self.isUsingLocationUpdate = false
+                }
+                locationManager.startMonitoringSignificantLocationChanges()
+            }
+        }
+    }
+    
+    // MARK: Adding/Removing Locations
     public func addLocation(distance: Double?, latitude: Double, longitude: Double, radius: Double?, name: String) {
         // check if optional distance and radius values are set
         var newLocationDistance: Double = self.distance
@@ -101,6 +158,7 @@ public class Tracker: NSObject, CLLocationManagerDelegate {
         }
     }
     
+    // MARK: Notifiying Users
     public func notifyPeople(region: CLRegion) {
         print("you are close to region \(region)")
     }
@@ -137,6 +195,7 @@ public class Tracker: NSObject, CLLocationManagerDelegate {
         }
     }
     
+    //MARK: Tracking Location Updates
     public func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         notifyIfWithinDistance(locations.last!)
     }
@@ -148,7 +207,6 @@ public class Tracker: NSObject, CLLocationManagerDelegate {
     public func locationManager(manager: CLLocationManager, didEnterRegion region: CLRegion) {
         print("did enter region \(region.identifier)")
         locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
-        self.currentTrackerAccuracy = locationManager.desiredAccuracy
         self.locationDic[region.identifier]?["withinRegion"] = true
     }
     
@@ -159,7 +217,6 @@ public class Tracker: NSObject, CLLocationManagerDelegate {
         
         if outOfAllRegions() {
             locationManager.desiredAccuracy = self.accuracy
-            self.currentTrackerAccuracy = locationManager.desiredAccuracy
         }
     }
     
