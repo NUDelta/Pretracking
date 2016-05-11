@@ -217,20 +217,25 @@ public class Tracker: NSObject, CLLocationManagerDelegate {
     }
     
     private func playAudio() {
-        let pathToAudio = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("silence", ofType: "mp3")!)
-        do {
-            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback, withOptions: AVAudioSessionCategoryOptions.MixWithOthers)
-            try AVAudioSession.sharedInstance().setActive(true)
-            print(pathToAudio)
-            player = try AVAudioPlayer(contentsOfURL: pathToAudio, fileTypeHint: "mp3")
-            player.numberOfLoops = -1
-            player.prepareToPlay()
-            player.play()
-            isPlaying = true
-            print ("playing silent audio in background")
-        }
-        catch _ {
-            return print("silence sound file not found")
+        if !isPlaying {
+            let pathToAudio = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("silence", ofType: "mp3")!)
+            
+            do {
+                // setup audio player
+                try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback, withOptions: AVAudioSessionCategoryOptions.MixWithOthers)
+                try AVAudioSession.sharedInstance().setActive(true)
+                print(pathToAudio)
+                player = try AVAudioPlayer(contentsOfURL: pathToAudio, fileTypeHint: "mp3")
+                player.numberOfLoops = -1
+                player.prepareToPlay()
+                player.play()
+                
+                isPlaying = true
+                print ("playing silent audio in background")
+            }
+            catch _ {
+                return print("silence sound file not found")
+            }
         }
     }
     
@@ -238,6 +243,7 @@ public class Tracker: NSObject, CLLocationManagerDelegate {
         if isPlaying {
             player.stop()
             print("stopped playing audio")
+            isPlaying = false
         }
     }
     
