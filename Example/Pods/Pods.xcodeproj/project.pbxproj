@@ -1,1753 +1,784 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>01BE581E1B9F0F107BE1539BEAEAA2D6</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>A359293D244D6BA96329F05A71721B84</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>08BBF0B9D1447B3A96AC3FB773F97FF4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-Pretracking_Example-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0E0A194D3910C2297C21B2FCE408FD57</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>AA8A26379CBF9C2404E5552D3D21D1CA</string>
-				<string>BABC55C8E31ECF16BFC6B96DE984A768</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>10DE1947DAC0ED28F6C0A9F9BD75D546</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>RELEASE=1</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.3</string>
-				<key>STRIP_INSTALLED_PRODUCT</key>
-				<string>NO</string>
-				<key>SYMROOT</key>
-				<string>${SRCROOT}/../build</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>146F2B6C902542B2F4CD66BD303B7C20</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Pods_Pretracking_Example.framework</string>
-			<key>path</key>
-			<string>Pods_Pretracking_Example.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>1AEBE8551966E8F9BCAE3BBA51B50362</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-Pretracking_Example-frameworks.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1C5DCAB46FD0FB381FB6A28E64D88EC7</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods-Pretracking_Example.modulemap</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2340A61D091BC01913C88422564E7ED5</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BABBF32FC0A9660164B75F9F130F79AE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pod</string>
-			<key>path</key>
-			<string>Pod</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2371860F0BC7A27CB4C5940FE1C29685</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>4161AC09841C910D2DAE307A594C33E2</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pods-Pretracking_Tests/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.3</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pods-Pretracking_Tests/Pods-Pretracking_Tests.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_NAME</key>
-				<string>Pods_Pretracking_Tests</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Onone</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>259C10408BC7F0A7750165FEBD99BE3A</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>F7A9F9F6C4EC1A2C30FF9DD7625D9432</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>26647DCD82AD30BB1AEF453D29432189</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>EE1F657CDC1A23195AEBFF7984D9ACFA</string>
-			<key>buildPhases</key>
-			<array>
-				<string>0E0A194D3910C2297C21B2FCE408FD57</string>
-				<string>30F34696B6EF1BB446756F0EE7B4AECB</string>
-				<string>259C10408BC7F0A7750165FEBD99BE3A</string>
-				<string>01BE581E1B9F0F107BE1539BEAEAA2D6</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>68A94D67CC02E0173D4BBFBB0330D8AF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pretracking</string>
-			<key>productName</key>
-			<string>Pretracking</string>
-			<key>productReference</key>
-			<string>9E5EAAB94AE34C1779A5624963E5AA9C</string>
-			<key>productType</key>
-			<string>com.apple.product-type.framework</string>
-		</dict>
-		<key>2A7B595BB58147369DA88A485AD3E55F</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>3E60FBBB656B23C5A34DED685F7FB0E4</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pods-Pretracking_Example/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.3</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pods-Pretracking_Example/Pods-Pretracking_Example.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_NAME</key>
-				<string>Pods_Pretracking_Example</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>2B344A3C5FD847567BB22E3691540951</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-Pretracking_Tests-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2CD7129CCAC2B6CDAE8BFFEAB7BB5E3B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>08BBF0B9D1447B3A96AC3FB773F97FF4</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>2D8E8EC45A3A1A1D94AE762CB5028504</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>552D02D5BA751AC2E8790D2811D496CA</string>
-				<string>10DE1947DAC0ED28F6C0A9F9BD75D546</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>2E5284C2C4EEFB29D4D3C6B2BC6074B9</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>2371860F0BC7A27CB4C5940FE1C29685</string>
-				<string>845A01D787FFCD600453A53FF587FF51</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>30F34696B6EF1BB446756F0EE7B4AECB</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>3A4A6B337E14692C47C8E7224D4BF319</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>326354A4D8EA722077C65B3E49DC23DE</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Pretracking.bundle</string>
-			<key>path</key>
-			<string>Pretracking.bundle</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>32B7437EAE030628283DA6B76AA1B070</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>Tracker.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>333187263A6795D5A8A61013C854FA3C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pretracking.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>37BAEAE29E5332C3225CE572F4A20E48</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-Pretracking_Tests-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3A4A6B337E14692C47C8E7224D4BF319</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3E4E89230EF59BC255123B67864ACF77</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3E4E89230EF59BC255123B67864ACF77</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>3E60FBBB656B23C5A34DED685F7FB0E4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-Pretracking_Example.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4161AC09841C910D2DAE307A594C33E2</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-Pretracking_Tests.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>447972DED7C47EAFED9633E140F3918A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pretracking.modulemap</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>487F193DBC8C7C3E1699C0B57B77A712</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>26647DCD82AD30BB1AEF453D29432189</string>
-			<key>remoteInfo</key>
-			<string>Pretracking</string>
-		</dict>
-		<key>48A5C31EB839B527D13815704375F685</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>D1255B7FF7F364C5C488442CA25779AD</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>4B6565A7BE92356922AB770DA84A576A</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>26647DCD82AD30BB1AEF453D29432189</string>
-			<key>remoteInfo</key>
-			<string>Pretracking</string>
-		</dict>
-		<key>4DD3F03A4AAEF430D4BA457F2C2D1D3F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-Pretracking_Tests-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5378BFB80239C1AC08BAE70586D838AC</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>76FA94EB96350932B62D97BED142623C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>5508E9AF8562BCE29F3DB1CDE0AC10F6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-Pretracking_Example-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>552D02D5BA751AC2E8790D2811D496CA</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.3</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>STRIP_INSTALLED_PRODUCT</key>
-				<string>NO</string>
-				<key>SYMROOT</key>
-				<string>${SRCROOT}/../build</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>5D1AE7528783C3C67B10BCA99BAA8115</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3E4E89230EF59BC255123B67864ACF77</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>65B35C69F2456FC4F1D15D2BCAB580F6</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>68A94D67CC02E0173D4BBFBB0330D8AF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>Pretracking-Pretracking</string>
-			<key>target</key>
-			<string>7C074FEDF8A8F062B884758A69330299</string>
-			<key>targetProxy</key>
-			<string>FB8439EC2FA89EC550BC7F1582035D45</string>
-		</dict>
-		<key>68B8E762FFF152167284F16FB81B2FBD</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>6E832A97E73F6ECCDBFBE71DEEA7F220</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C50BC1BE682DA838D98BDFB3C3B00A54</string>
-				<string>1C5DCAB46FD0FB381FB6A28E64D88EC7</string>
-				<string>BBB2F7B5B2718E13B60B2F9A8A7D6B7E</string>
-				<string>5508E9AF8562BCE29F3DB1CDE0AC10F6</string>
-				<string>08BBF0B9D1447B3A96AC3FB773F97FF4</string>
-				<string>1AEBE8551966E8F9BCAE3BBA51B50362</string>
-				<string>881899AB017A42EC40D8708CE6B60C24</string>
-				<string>9276EDDB98C9F4B18123D5A930669D64</string>
-				<string>8F2E074E44E973A7C4A54B39BD7648C7</string>
-				<string>3E60FBBB656B23C5A34DED685F7FB0E4</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-Pretracking_Example</string>
-			<key>path</key>
-			<string>Target Support Files/Pods-Pretracking_Example</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6F87AB06F76BA554F7F2DEE426618109</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9276EDDB98C9F4B18123D5A930669D64</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>76660A7B3332E13B821187B8BC87278E</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>8F2E074E44E973A7C4A54B39BD7648C7</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pods-Pretracking_Example/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.3</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pods-Pretracking_Example/Pods-Pretracking_Example.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_NAME</key>
-				<string>Pods_Pretracking_Example</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Onone</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>76FA94EB96350932B62D97BED142623C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3E4E89230EF59BC255123B67864ACF77</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>7C074FEDF8A8F062B884758A69330299</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>7C7C19AE2E1CA235DC4D5222F428BAE2</string>
-			<key>buildPhases</key>
-			<array>
-				<string>65B35C69F2456FC4F1D15D2BCAB580F6</string>
-				<string>68B8E762FFF152167284F16FB81B2FBD</string>
-				<string>A61B3A5CB832D76385EFEE72B268A98D</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pretracking-Pretracking</string>
-			<key>productName</key>
-			<string>Pretracking-Pretracking</string>
-			<key>productReference</key>
-			<string>326354A4D8EA722077C65B3E49DC23DE</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle</string>
-		</dict>
-		<key>7C7C19AE2E1CA235DC4D5222F428BAE2</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>B04DDD0D7321C265CC90F8607BBE3550</string>
-				<string>AAD35ECB18EDDE4AA22C6E7E41FD3661</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>7CF83C30CBE6A22290702E2A1F48AE5E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>2340A61D091BC01913C88422564E7ED5</string>
-				<string>8D7486E57A1A139625F684C2DE943B42</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pretracking</string>
-			<key>path</key>
-			<string>../..</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7DB346D0F39D3F0E887471402A8071AB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BA6428E9F66FD5A23C0A2E06ED26CD2F</string>
-				<string>EA75DD77B36C41FBA9625BD4DD3094A1</string>
-				<string>BC3CA7F9E30CC8F7E2DD044DD34432FC</string>
-				<string>F8F0A570C1A0CAEC644DA3B36194E93B</string>
-				<string>D86F57EEBFE234C4284949FC87E735C7</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>81F48B5555CAC0CE0C81F90CEFA647A4</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>Pretracking</string>
-			<key>target</key>
-			<string>26647DCD82AD30BB1AEF453D29432189</string>
-			<key>targetProxy</key>
-			<string>4B6565A7BE92356922AB770DA84A576A</string>
-		</dict>
-		<key>845A01D787FFCD600453A53FF587FF51</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>BE05D0A4EE3D8B20FFCAF247FF11652F</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pods-Pretracking_Tests/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.3</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pods-Pretracking_Tests/Pods-Pretracking_Tests.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_NAME</key>
-				<string>Pods_Pretracking_Tests</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>8786D5871D9C7F97C71B34B792270D52</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-Pretracking_Tests-frameworks.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>881899AB017A42EC40D8708CE6B60C24</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-Pretracking_Example-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8D7486E57A1A139625F684C2DE943B42</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>F80E97FD9549C63A7DA1CCDB4F9930C4</string>
-				<string>447972DED7C47EAFED9633E140F3918A</string>
-				<string>333187263A6795D5A8A61013C854FA3C</string>
-				<string>DF3E4B213EB2C9E02BE3EEA790768F2D</string>
-				<string>EE9211F92FE4A14F780C3DFF6699D318</string>
-				<string>F2BA6C9DDE8FAD44A586802A6A724318</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Support Files</string>
-			<key>path</key>
-			<string>Example/Pods/Target Support Files/Pretracking</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8DDC0E205D994BAE9D385990E00A6258</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>Pretracking</string>
-			<key>target</key>
-			<string>26647DCD82AD30BB1AEF453D29432189</string>
-			<key>targetProxy</key>
-			<string>487F193DBC8C7C3E1699C0B57B77A712</string>
-		</dict>
-		<key>8F2E074E44E973A7C4A54B39BD7648C7</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-Pretracking_Example.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8F53CD8E2F6F6FCB33D5616973CDFA8F</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>333187263A6795D5A8A61013C854FA3C</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/Pretracking/Pretracking-prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pretracking/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.3</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pretracking/Pretracking.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>PRODUCT_NAME</key>
-				<string>Pretracking</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Onone</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>91F5647DB253247D5C7CEDD95ED0D74E</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>2CD7129CCAC2B6CDAE8BFFEAB7BB5E3B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>9276EDDB98C9F4B18123D5A930669D64</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-Pretracking_Example-umbrella.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>932AF894C4F786506D6111C25D960335</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CFCB796CF46ECEAC73FA0E965DFB82FF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>9E5EAAB94AE34C1779A5624963E5AA9C</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Pretracking.framework</string>
-			<key>path</key>
-			<string>Pretracking.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>9F9D14E24C5D367261952F52E49C0F8A</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>2E5284C2C4EEFB29D4D3C6B2BC6074B9</string>
-			<key>buildPhases</key>
-			<array>
-				<string>48A5C31EB839B527D13815704375F685</string>
-				<string>5378BFB80239C1AC08BAE70586D838AC</string>
-				<string>B748DA022E197525217A024B3C487022</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>81F48B5555CAC0CE0C81F90CEFA647A4</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-Pretracking_Tests</string>
-			<key>productName</key>
-			<string>Pods-Pretracking_Tests</string>
-			<key>productReference</key>
-			<string>F01C7A16C1C610CEDB4EE5974A07AD16</string>
-			<key>productType</key>
-			<string>com.apple.product-type.framework</string>
-		</dict>
-		<key>A359293D244D6BA96329F05A71721B84</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F2BA6C9DDE8FAD44A586802A6A724318</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>A61B3A5CB832D76385EFEE72B268A98D</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>A74F26061F7BA5B8233020EB1C493567</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods-Pretracking_Tests.modulemap</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AA8A26379CBF9C2404E5552D3D21D1CA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DF3E4B213EB2C9E02BE3EEA790768F2D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AAD35ECB18EDDE4AA22C6E7E41FD3661</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>333187263A6795D5A8A61013C854FA3C</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>PRODUCT_NAME</key>
-				<string>Pretracking</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>bundle</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>AECE23713FA9CE6B0565C29CDE3A8071</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E01EC16988E137F1658B2E499E261310</string>
-				<string>A74F26061F7BA5B8233020EB1C493567</string>
-				<string>2B344A3C5FD847567BB22E3691540951</string>
-				<string>37BAEAE29E5332C3225CE572F4A20E48</string>
-				<string>BB0946EECEB008557F2AD82081776E0D</string>
-				<string>8786D5871D9C7F97C71B34B792270D52</string>
-				<string>4DD3F03A4AAEF430D4BA457F2C2D1D3F</string>
-				<string>CFCB796CF46ECEAC73FA0E965DFB82FF</string>
-				<string>4161AC09841C910D2DAE307A594C33E2</string>
-				<string>BE05D0A4EE3D8B20FFCAF247FF11652F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-Pretracking_Tests</string>
-			<key>path</key>
-			<string>Target Support Files/Pods-Pretracking_Tests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B04DDD0D7321C265CC90F8607BBE3550</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>333187263A6795D5A8A61013C854FA3C</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>PRODUCT_NAME</key>
-				<string>Pretracking</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>bundle</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>B58946147080603AE3DC5E398E0E4381</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>C3D87DEA09D05269336D62C2003EBB60</string>
-			<key>buildPhases</key>
-			<array>
-				<string>91F5647DB253247D5C7CEDD95ED0D74E</string>
-				<string>EAC35F7A8A8D7A72031D1FB76F8793A2</string>
-				<string>C3B15D6942404A8B49134A76F54F0403</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>8DDC0E205D994BAE9D385990E00A6258</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-Pretracking_Example</string>
-			<key>productName</key>
-			<string>Pods-Pretracking_Example</string>
-			<key>productReference</key>
-			<string>146F2B6C902542B2F4CD66BD303B7C20</string>
-			<key>productType</key>
-			<string>com.apple.product-type.framework</string>
-		</dict>
-		<key>B748DA022E197525217A024B3C487022</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>932AF894C4F786506D6111C25D960335</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>BA6428E9F66FD5A23C0A2E06ED26CD2F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>name</key>
-			<string>Podfile</string>
-			<key>path</key>
-			<string>../Podfile</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-			<key>xcLanguageSpecificationIdentifier</key>
-			<string>xcode.lang.ruby</string>
-		</dict>
-		<key>BABBF32FC0A9660164B75F9F130F79AE</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>32B7437EAE030628283DA6B76AA1B070</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Classes</string>
-			<key>path</key>
-			<string>Classes</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BABC55C8E31ECF16BFC6B96DE984A768</key>
-		<dict>
-			<key>fileRef</key>
-			<string>32B7437EAE030628283DA6B76AA1B070</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BB0946EECEB008557F2AD82081776E0D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-Pretracking_Tests-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BBB2F7B5B2718E13B60B2F9A8A7D6B7E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-Pretracking_Example-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BC3CA7F9E30CC8F7E2DD044DD34432FC</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BF6342C8B29F4CEEA088EFF7AB4DE362</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BE05D0A4EE3D8B20FFCAF247FF11652F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-Pretracking_Tests.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BF6342C8B29F4CEEA088EFF7AB4DE362</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3E4E89230EF59BC255123B67864ACF77</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>iOS</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C3B15D6942404A8B49134A76F54F0403</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>6F87AB06F76BA554F7F2DEE426618109</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>C3D87DEA09D05269336D62C2003EBB60</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>76660A7B3332E13B821187B8BC87278E</string>
-				<string>2A7B595BB58147369DA88A485AD3E55F</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>C50BC1BE682DA838D98BDFB3C3B00A54</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C9936DA6BF059010670EF51D9A1DBC4A</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>333187263A6795D5A8A61013C854FA3C</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/Pretracking/Pretracking-prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pretracking/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.3</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pretracking/Pretracking.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>PRODUCT_NAME</key>
-				<string>Pretracking</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>CFCB796CF46ECEAC73FA0E965DFB82FF</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-Pretracking_Tests-umbrella.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D1255B7FF7F364C5C488442CA25779AD</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BB0946EECEB008557F2AD82081776E0D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D41D8CD98F00B204E9800998ECF8427E</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastSwiftUpdateCheck</key>
-				<string>0700</string>
-				<key>LastUpgradeCheck</key>
-				<string>0700</string>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>2D8E8EC45A3A1A1D94AE762CB5028504</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-			</array>
-			<key>mainGroup</key>
-			<string>7DB346D0F39D3F0E887471402A8071AB</string>
-			<key>productRefGroup</key>
-			<string>F8F0A570C1A0CAEC644DA3B36194E93B</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>B58946147080603AE3DC5E398E0E4381</string>
-				<string>9F9D14E24C5D367261952F52E49C0F8A</string>
-				<string>26647DCD82AD30BB1AEF453D29432189</string>
-				<string>7C074FEDF8A8F062B884758A69330299</string>
-			</array>
-		</dict>
-		<key>D86F57EEBFE234C4284949FC87E735C7</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>6E832A97E73F6ECCDBFBE71DEEA7F220</string>
-				<string>AECE23713FA9CE6B0565C29CDE3A8071</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Targets Support Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF3E4B213EB2C9E02BE3EEA790768F2D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pretracking-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E01EC16988E137F1658B2E499E261310</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EA75DD77B36C41FBA9625BD4DD3094A1</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>7CF83C30CBE6A22290702E2A1F48AE5E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Development Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EAC35F7A8A8D7A72031D1FB76F8793A2</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>5D1AE7528783C3C67B10BCA99BAA8115</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>EE1F657CDC1A23195AEBFF7984D9ACFA</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>8F53CD8E2F6F6FCB33D5616973CDFA8F</string>
-				<string>C9936DA6BF059010670EF51D9A1DBC4A</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>EE9211F92FE4A14F780C3DFF6699D318</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pretracking-prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F01C7A16C1C610CEDB4EE5974A07AD16</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Pods_Pretracking_Tests.framework</string>
-			<key>path</key>
-			<string>Pods_Pretracking_Tests.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>F2BA6C9DDE8FAD44A586802A6A724318</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pretracking-umbrella.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F7A9F9F6C4EC1A2C30FF9DD7625D9432</key>
-		<dict>
-			<key>fileRef</key>
-			<string>326354A4D8EA722077C65B3E49DC23DE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F80E97FD9549C63A7DA1CCDB4F9930C4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F8F0A570C1A0CAEC644DA3B36194E93B</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>146F2B6C902542B2F4CD66BD303B7C20</string>
-				<string>F01C7A16C1C610CEDB4EE5974A07AD16</string>
-				<string>326354A4D8EA722077C65B3E49DC23DE</string>
-				<string>9E5EAAB94AE34C1779A5624963E5AA9C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FB8439EC2FA89EC550BC7F1582035D45</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>7C074FEDF8A8F062B884758A69330299</string>
-			<key>remoteInfo</key>
-			<string>Pretracking-Pretracking</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>D41D8CD98F00B204E9800998ECF8427E</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2CD7129CCAC2B6CDAE8BFFEAB7BB5E3B /* Pods-Pretracking_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BBF0B9D1447B3A96AC3FB773F97FF4 /* Pods-Pretracking_Example-dummy.m */; };
+		3A4A6B337E14692C47C8E7224D4BF319 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		59F1EB5F1CE3DB27008A4D25 /* silence.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 59F1EB5E1CE3DB27008A4D25 /* silence.mp3 */; };
+		5D1AE7528783C3C67B10BCA99BAA8115 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		6F87AB06F76BA554F7F2DEE426618109 /* Pods-Pretracking_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9276EDDB98C9F4B18123D5A930669D64 /* Pods-Pretracking_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		76FA94EB96350932B62D97BED142623C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		932AF894C4F786506D6111C25D960335 /* Pods-Pretracking_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CFCB796CF46ECEAC73FA0E965DFB82FF /* Pods-Pretracking_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A359293D244D6BA96329F05A71721B84 /* Pretracking-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F2BA6C9DDE8FAD44A586802A6A724318 /* Pretracking-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA8A26379CBF9C2404E5552D3D21D1CA /* Pretracking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3E4B213EB2C9E02BE3EEA790768F2D /* Pretracking-dummy.m */; };
+		BABC55C8E31ECF16BFC6B96DE984A768 /* Tracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B7437EAE030628283DA6B76AA1B070 /* Tracker.swift */; };
+		D1255B7FF7F364C5C488442CA25779AD /* Pods-Pretracking_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0946EECEB008557F2AD82081776E0D /* Pods-Pretracking_Tests-dummy.m */; };
+		F7A9F9F6C4EC1A2C30FF9DD7625D9432 /* Pretracking.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 326354A4D8EA722077C65B3E49DC23DE /* Pretracking.bundle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		487F193DBC8C7C3E1699C0B57B77A712 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26647DCD82AD30BB1AEF453D29432189;
+			remoteInfo = Pretracking;
+		};
+		4B6565A7BE92356922AB770DA84A576A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26647DCD82AD30BB1AEF453D29432189;
+			remoteInfo = Pretracking;
+		};
+		FB8439EC2FA89EC550BC7F1582035D45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C074FEDF8A8F062B884758A69330299;
+			remoteInfo = "Pretracking-Pretracking";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08BBF0B9D1447B3A96AC3FB773F97FF4 /* Pods-Pretracking_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Pretracking_Example-dummy.m"; sourceTree = "<group>"; };
+		146F2B6C902542B2F4CD66BD303B7C20 /* Pods_Pretracking_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pretracking_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AEBE8551966E8F9BCAE3BBA51B50362 /* Pods-Pretracking_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pretracking_Example-frameworks.sh"; sourceTree = "<group>"; };
+		1C5DCAB46FD0FB381FB6A28E64D88EC7 /* Pods-Pretracking_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Pretracking_Example.modulemap"; sourceTree = "<group>"; };
+		2B344A3C5FD847567BB22E3691540951 /* Pods-Pretracking_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Pretracking_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		326354A4D8EA722077C65B3E49DC23DE /* Pretracking.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Pretracking.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		32B7437EAE030628283DA6B76AA1B070 /* Tracker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Tracker.swift; sourceTree = "<group>"; };
+		333187263A6795D5A8A61013C854FA3C /* Pretracking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pretracking.xcconfig; sourceTree = "<group>"; };
+		37BAEAE29E5332C3225CE572F4A20E48 /* Pods-Pretracking_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pretracking_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3E60FBBB656B23C5A34DED685F7FB0E4 /* Pods-Pretracking_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pretracking_Example.release.xcconfig"; sourceTree = "<group>"; };
+		4161AC09841C910D2DAE307A594C33E2 /* Pods-Pretracking_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pretracking_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		447972DED7C47EAFED9633E140F3918A /* Pretracking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Pretracking.modulemap; sourceTree = "<group>"; };
+		4DD3F03A4AAEF430D4BA457F2C2D1D3F /* Pods-Pretracking_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pretracking_Tests-resources.sh"; sourceTree = "<group>"; };
+		5508E9AF8562BCE29F3DB1CDE0AC10F6 /* Pods-Pretracking_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pretracking_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		59F1EB5E1CE3DB27008A4D25 /* silence.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = silence.mp3; sourceTree = "<group>"; };
+		8786D5871D9C7F97C71B34B792270D52 /* Pods-Pretracking_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pretracking_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		881899AB017A42EC40D8708CE6B60C24 /* Pods-Pretracking_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pretracking_Example-resources.sh"; sourceTree = "<group>"; };
+		8F2E074E44E973A7C4A54B39BD7648C7 /* Pods-Pretracking_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pretracking_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		9276EDDB98C9F4B18123D5A930669D64 /* Pods-Pretracking_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Pretracking_Example-umbrella.h"; sourceTree = "<group>"; };
+		9E5EAAB94AE34C1779A5624963E5AA9C /* Pretracking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pretracking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A74F26061F7BA5B8233020EB1C493567 /* Pods-Pretracking_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Pretracking_Tests.modulemap"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BB0946EECEB008557F2AD82081776E0D /* Pods-Pretracking_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Pretracking_Tests-dummy.m"; sourceTree = "<group>"; };
+		BBB2F7B5B2718E13B60B2F9A8A7D6B7E /* Pods-Pretracking_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Pretracking_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BE05D0A4EE3D8B20FFCAF247FF11652F /* Pods-Pretracking_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pretracking_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		C50BC1BE682DA838D98BDFB3C3B00A54 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFCB796CF46ECEAC73FA0E965DFB82FF /* Pods-Pretracking_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Pretracking_Tests-umbrella.h"; sourceTree = "<group>"; };
+		DF3E4B213EB2C9E02BE3EEA790768F2D /* Pretracking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pretracking-dummy.m"; sourceTree = "<group>"; };
+		E01EC16988E137F1658B2E499E261310 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE9211F92FE4A14F780C3DFF6699D318 /* Pretracking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pretracking-prefix.pch"; sourceTree = "<group>"; };
+		F01C7A16C1C610CEDB4EE5974A07AD16 /* Pods_Pretracking_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pretracking_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2BA6C9DDE8FAD44A586802A6A724318 /* Pretracking-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pretracking-umbrella.h"; sourceTree = "<group>"; };
+		F80E97FD9549C63A7DA1CCDB4F9930C4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		30F34696B6EF1BB446756F0EE7B4AECB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A4A6B337E14692C47C8E7224D4BF319 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5378BFB80239C1AC08BAE70586D838AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76FA94EB96350932B62D97BED142623C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68B8E762FFF152167284F16FB81B2FBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAC35F7A8A8D7A72031D1FB76F8793A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D1AE7528783C3C67B10BCA99BAA8115 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2340A61D091BC01913C88422564E7ED5 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				BABBF32FC0A9660164B75F9F130F79AE /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		6E832A97E73F6ECCDBFBE71DEEA7F220 /* Pods-Pretracking_Example */ = {
+			isa = PBXGroup;
+			children = (
+				C50BC1BE682DA838D98BDFB3C3B00A54 /* Info.plist */,
+				1C5DCAB46FD0FB381FB6A28E64D88EC7 /* Pods-Pretracking_Example.modulemap */,
+				BBB2F7B5B2718E13B60B2F9A8A7D6B7E /* Pods-Pretracking_Example-acknowledgements.markdown */,
+				5508E9AF8562BCE29F3DB1CDE0AC10F6 /* Pods-Pretracking_Example-acknowledgements.plist */,
+				08BBF0B9D1447B3A96AC3FB773F97FF4 /* Pods-Pretracking_Example-dummy.m */,
+				1AEBE8551966E8F9BCAE3BBA51B50362 /* Pods-Pretracking_Example-frameworks.sh */,
+				881899AB017A42EC40D8708CE6B60C24 /* Pods-Pretracking_Example-resources.sh */,
+				9276EDDB98C9F4B18123D5A930669D64 /* Pods-Pretracking_Example-umbrella.h */,
+				8F2E074E44E973A7C4A54B39BD7648C7 /* Pods-Pretracking_Example.debug.xcconfig */,
+				3E60FBBB656B23C5A34DED685F7FB0E4 /* Pods-Pretracking_Example.release.xcconfig */,
+			);
+			name = "Pods-Pretracking_Example";
+			path = "Target Support Files/Pods-Pretracking_Example";
+			sourceTree = "<group>";
+		};
+		7CF83C30CBE6A22290702E2A1F48AE5E /* Pretracking */ = {
+			isa = PBXGroup;
+			children = (
+				2340A61D091BC01913C88422564E7ED5 /* Pod */,
+				8D7486E57A1A139625F684C2DE943B42 /* Support Files */,
+			);
+			name = Pretracking;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				EA75DD77B36C41FBA9625BD4DD3094A1 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				F8F0A570C1A0CAEC644DA3B36194E93B /* Products */,
+				D86F57EEBFE234C4284949FC87E735C7 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8D7486E57A1A139625F684C2DE943B42 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				59F1EB5E1CE3DB27008A4D25 /* silence.mp3 */,
+				F80E97FD9549C63A7DA1CCDB4F9930C4 /* Info.plist */,
+				447972DED7C47EAFED9633E140F3918A /* Pretracking.modulemap */,
+				333187263A6795D5A8A61013C854FA3C /* Pretracking.xcconfig */,
+				DF3E4B213EB2C9E02BE3EEA790768F2D /* Pretracking-dummy.m */,
+				EE9211F92FE4A14F780C3DFF6699D318 /* Pretracking-prefix.pch */,
+				F2BA6C9DDE8FAD44A586802A6A724318 /* Pretracking-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Pretracking";
+			sourceTree = "<group>";
+		};
+		AECE23713FA9CE6B0565C29CDE3A8071 /* Pods-Pretracking_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E01EC16988E137F1658B2E499E261310 /* Info.plist */,
+				A74F26061F7BA5B8233020EB1C493567 /* Pods-Pretracking_Tests.modulemap */,
+				2B344A3C5FD847567BB22E3691540951 /* Pods-Pretracking_Tests-acknowledgements.markdown */,
+				37BAEAE29E5332C3225CE572F4A20E48 /* Pods-Pretracking_Tests-acknowledgements.plist */,
+				BB0946EECEB008557F2AD82081776E0D /* Pods-Pretracking_Tests-dummy.m */,
+				8786D5871D9C7F97C71B34B792270D52 /* Pods-Pretracking_Tests-frameworks.sh */,
+				4DD3F03A4AAEF430D4BA457F2C2D1D3F /* Pods-Pretracking_Tests-resources.sh */,
+				CFCB796CF46ECEAC73FA0E965DFB82FF /* Pods-Pretracking_Tests-umbrella.h */,
+				4161AC09841C910D2DAE307A594C33E2 /* Pods-Pretracking_Tests.debug.xcconfig */,
+				BE05D0A4EE3D8B20FFCAF247FF11652F /* Pods-Pretracking_Tests.release.xcconfig */,
+			);
+			name = "Pods-Pretracking_Tests";
+			path = "Target Support Files/Pods-Pretracking_Tests";
+			sourceTree = "<group>";
+		};
+		BABBF32FC0A9660164B75F9F130F79AE /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				32B7437EAE030628283DA6B76AA1B070 /* Tracker.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		D86F57EEBFE234C4284949FC87E735C7 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6E832A97E73F6ECCDBFBE71DEEA7F220 /* Pods-Pretracking_Example */,
+				AECE23713FA9CE6B0565C29CDE3A8071 /* Pods-Pretracking_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		EA75DD77B36C41FBA9625BD4DD3094A1 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7CF83C30CBE6A22290702E2A1F48AE5E /* Pretracking */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		F8F0A570C1A0CAEC644DA3B36194E93B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				146F2B6C902542B2F4CD66BD303B7C20 /* Pods_Pretracking_Example.framework */,
+				F01C7A16C1C610CEDB4EE5974A07AD16 /* Pods_Pretracking_Tests.framework */,
+				326354A4D8EA722077C65B3E49DC23DE /* Pretracking.bundle */,
+				9E5EAAB94AE34C1779A5624963E5AA9C /* Pretracking.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		01BE581E1B9F0F107BE1539BEAEAA2D6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A359293D244D6BA96329F05A71721B84 /* Pretracking-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B748DA022E197525217A024B3C487022 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				932AF894C4F786506D6111C25D960335 /* Pods-Pretracking_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3B15D6942404A8B49134A76F54F0403 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F87AB06F76BA554F7F2DEE426618109 /* Pods-Pretracking_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		26647DCD82AD30BB1AEF453D29432189 /* Pretracking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE1F657CDC1A23195AEBFF7984D9ACFA /* Build configuration list for PBXNativeTarget "Pretracking" */;
+			buildPhases = (
+				0E0A194D3910C2297C21B2FCE408FD57 /* Sources */,
+				30F34696B6EF1BB446756F0EE7B4AECB /* Frameworks */,
+				259C10408BC7F0A7750165FEBD99BE3A /* Resources */,
+				01BE581E1B9F0F107BE1539BEAEAA2D6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				68A94D67CC02E0173D4BBFBB0330D8AF /* PBXTargetDependency */,
+			);
+			name = Pretracking;
+			productName = Pretracking;
+			productReference = 9E5EAAB94AE34C1779A5624963E5AA9C /* Pretracking.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7C074FEDF8A8F062B884758A69330299 /* Pretracking-Pretracking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C7C19AE2E1CA235DC4D5222F428BAE2 /* Build configuration list for PBXNativeTarget "Pretracking-Pretracking" */;
+			buildPhases = (
+				65B35C69F2456FC4F1D15D2BCAB580F6 /* Sources */,
+				68B8E762FFF152167284F16FB81B2FBD /* Frameworks */,
+				A61B3A5CB832D76385EFEE72B268A98D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pretracking-Pretracking";
+			productName = "Pretracking-Pretracking";
+			productReference = 326354A4D8EA722077C65B3E49DC23DE /* Pretracking.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		9F9D14E24C5D367261952F52E49C0F8A /* Pods-Pretracking_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E5284C2C4EEFB29D4D3C6B2BC6074B9 /* Build configuration list for PBXNativeTarget "Pods-Pretracking_Tests" */;
+			buildPhases = (
+				48A5C31EB839B527D13815704375F685 /* Sources */,
+				5378BFB80239C1AC08BAE70586D838AC /* Frameworks */,
+				B748DA022E197525217A024B3C487022 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				81F48B5555CAC0CE0C81F90CEFA647A4 /* PBXTargetDependency */,
+			);
+			name = "Pods-Pretracking_Tests";
+			productName = "Pods-Pretracking_Tests";
+			productReference = F01C7A16C1C610CEDB4EE5974A07AD16 /* Pods_Pretracking_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B58946147080603AE3DC5E398E0E4381 /* Pods-Pretracking_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3D87DEA09D05269336D62C2003EBB60 /* Build configuration list for PBXNativeTarget "Pods-Pretracking_Example" */;
+			buildPhases = (
+				91F5647DB253247D5C7CEDD95ED0D74E /* Sources */,
+				EAC35F7A8A8D7A72031D1FB76F8793A2 /* Frameworks */,
+				C3B15D6942404A8B49134A76F54F0403 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8DDC0E205D994BAE9D385990E00A6258 /* PBXTargetDependency */,
+			);
+			name = "Pods-Pretracking_Example";
+			productName = "Pods-Pretracking_Example";
+			productReference = 146F2B6C902542B2F4CD66BD303B7C20 /* Pods_Pretracking_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = F8F0A570C1A0CAEC644DA3B36194E93B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B58946147080603AE3DC5E398E0E4381 /* Pods-Pretracking_Example */,
+				9F9D14E24C5D367261952F52E49C0F8A /* Pods-Pretracking_Tests */,
+				26647DCD82AD30BB1AEF453D29432189 /* Pretracking */,
+				7C074FEDF8A8F062B884758A69330299 /* Pretracking-Pretracking */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		259C10408BC7F0A7750165FEBD99BE3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59F1EB5F1CE3DB27008A4D25 /* silence.mp3 in Resources */,
+				F7A9F9F6C4EC1A2C30FF9DD7625D9432 /* Pretracking.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A61B3A5CB832D76385EFEE72B268A98D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0E0A194D3910C2297C21B2FCE408FD57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA8A26379CBF9C2404E5552D3D21D1CA /* Pretracking-dummy.m in Sources */,
+				BABC55C8E31ECF16BFC6B96DE984A768 /* Tracker.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48A5C31EB839B527D13815704375F685 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1255B7FF7F364C5C488442CA25779AD /* Pods-Pretracking_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65B35C69F2456FC4F1D15D2BCAB580F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91F5647DB253247D5C7CEDD95ED0D74E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CD7129CCAC2B6CDAE8BFFEAB7BB5E3B /* Pods-Pretracking_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		68A94D67CC02E0173D4BBFBB0330D8AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pretracking-Pretracking";
+			target = 7C074FEDF8A8F062B884758A69330299 /* Pretracking-Pretracking */;
+			targetProxy = FB8439EC2FA89EC550BC7F1582035D45 /* PBXContainerItemProxy */;
+		};
+		81F48B5555CAC0CE0C81F90CEFA647A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Pretracking;
+			target = 26647DCD82AD30BB1AEF453D29432189 /* Pretracking */;
+			targetProxy = 4B6565A7BE92356922AB770DA84A576A /* PBXContainerItemProxy */;
+		};
+		8DDC0E205D994BAE9D385990E00A6258 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Pretracking;
+			target = 26647DCD82AD30BB1AEF453D29432189 /* Pretracking */;
+			targetProxy = 487F193DBC8C7C3E1699C0B57B77A712 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2371860F0BC7A27CB4C5940FE1C29685 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4161AC09841C910D2DAE307A594C33E2 /* Pods-Pretracking_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Pretracking_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Pretracking_Tests/Pods-Pretracking_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Pretracking_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2A7B595BB58147369DA88A485AD3E55F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E60FBBB656B23C5A34DED685F7FB0E4 /* Pods-Pretracking_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Pretracking_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Pretracking_Example/Pods-Pretracking_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Pretracking_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		552D02D5BA751AC2E8790D2811D496CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		76660A7B3332E13B821187B8BC87278E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F2E074E44E973A7C4A54B39BD7648C7 /* Pods-Pretracking_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Pretracking_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Pretracking_Example/Pods-Pretracking_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Pretracking_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		845A01D787FFCD600453A53FF587FF51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE05D0A4EE3D8B20FFCAF247FF11652F /* Pods-Pretracking_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Pretracking_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Pretracking_Tests/Pods-Pretracking_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Pretracking_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8F53CD8E2F6F6FCB33D5616973CDFA8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 333187263A6795D5A8A61013C854FA3C /* Pretracking.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pretracking/Pretracking-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pretracking/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pretracking/Pretracking.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Pretracking;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AAD35ECB18EDDE4AA22C6E7E41FD3661 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 333187263A6795D5A8A61013C854FA3C /* Pretracking.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = Pretracking;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		B04DDD0D7321C265CC90F8607BBE3550 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 333187263A6795D5A8A61013C854FA3C /* Pretracking.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = Pretracking;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		C9936DA6BF059010670EF51D9A1DBC4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 333187263A6795D5A8A61013C854FA3C /* Pretracking.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pretracking/Pretracking-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pretracking/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pretracking/Pretracking.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Pretracking;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				552D02D5BA751AC2E8790D2811D496CA /* Debug */,
+				10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E5284C2C4EEFB29D4D3C6B2BC6074B9 /* Build configuration list for PBXNativeTarget "Pods-Pretracking_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2371860F0BC7A27CB4C5940FE1C29685 /* Debug */,
+				845A01D787FFCD600453A53FF587FF51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C7C19AE2E1CA235DC4D5222F428BAE2 /* Build configuration list for PBXNativeTarget "Pretracking-Pretracking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B04DDD0D7321C265CC90F8607BBE3550 /* Debug */,
+				AAD35ECB18EDDE4AA22C6E7E41FD3661 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3D87DEA09D05269336D62C2003EBB60 /* Build configuration list for PBXNativeTarget "Pods-Pretracking_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76660A7B3332E13B821187B8BC87278E /* Debug */,
+				2A7B595BB58147369DA88A485AD3E55F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE1F657CDC1A23195AEBFF7984D9ACFA /* Build configuration list for PBXNativeTarget "Pretracking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F53CD8E2F6F6FCB33D5616973CDFA8F /* Debug */,
+				C9936DA6BF059010670EF51D9A1DBC4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

@@ -5,7 +5,9 @@
 //  Created by Yongsung on 1/26/16.
 //  Copyright © 2016 Delta. All rights reserved.
 //
+import Foundation
 import CoreLocation
+import AVFoundation
 
 public class Tracker: NSObject, CLLocationManagerDelegate {
     public var distance: Double = 25.0
@@ -15,6 +17,9 @@ public class Tracker: NSObject, CLLocationManagerDelegate {
     
     var locationDic: [String: [String: Any]] = [:]
     let locationManager = CLLocationManager()
+    
+    var player = AVAudioPlayer()
+    var isPlaying: Bool = false
     
     private var isUsingLocationUpdate = false
     
@@ -208,6 +213,32 @@ public class Tracker: NSObject, CLLocationManagerDelegate {
         print("did enter region \(region.identifier)")
         locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
         self.locationDic[region.identifier]?["withinRegion"] = true
+        playAudio()
+    }
+    
+    private func playAudio() {
+        let pathToAudio = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("silence", ofType: "mp3")!)
+        do {
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback, withOptions: AVAudioSessionCategoryOptions.MixWithOthers)
+            try AVAudioSession.sharedInstance().setActive(true)
+            print(pathToAudio)
+            player = try AVAudioPlayer(contentsOfURL: pathToAudio, fileTypeHint: "mp3")
+            player.numberOfLoops = -1
+            player.prepareToPlay()
+            player.play()
+            isPlaying = true
+            print ("playing silent audio in background")
+        }
+        catch _ {
+            return print("silence sound file not found")
+        }
+    }
+    
+    private func stopAudio() {
+        if isPlaying {
+            player.stop()
+            print("stopped playing audio")
+        }
     }
     
     public func locationManager(manager: CLLocationManager, didExitRegion region: CLRegion) {
@@ -217,6 +248,7 @@ public class Tracker: NSObject, CLLocationManagerDelegate {
         
         if outOfAllRegions() {
             locationManager.desiredAccuracy = self.accuracy
+            stopAudio()
         }
     }
     

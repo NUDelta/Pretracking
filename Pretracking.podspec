@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "Pretracking"
-  s.version          = "0.1.12"
+  s.version          = "0.1.13"
   s.summary          = "This does Pretracking."
 
 # This description is used to generate tags and improve search results.
@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
 
   s.source_files = 'Pod/Classes/**/*'
   s.resource_bundles = {
-    'Pretracking' => ['Pod/Assets/*.png']
+    'Pretracking' => ['Pod/Assets/*.png', 'Pod/Assets/*.mp3']
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
