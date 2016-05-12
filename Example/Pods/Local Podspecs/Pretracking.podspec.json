@@ -1,6 +1,6 @@
 {
   "name": "Pretracking",
-  "version": "0.1.4",
+  "version": "0.1.14",
   "summary": "This does Pretracking.",
   "description": "This is a Pretracking framework for tracking users location in a specified region with defined accuracy",
   "homepage": "https://github.com/NUDelta/Pretracking",
@@ -10,7 +10,7 @@
   },
   "source": {
     "git": "https://github.com/NUDelta/Pretracking.git",
-    "tag": "0.1.4"
+    "tag": "0.1.14"
   },
   "platforms": {
     "ios": "8.0"
@@ -19,7 +19,8 @@
   "source_files": "Pod/Classes/**/*",
   "resource_bundles": {
     "Pretracking": [
-      "Pod/Assets/*.png"
+      "Pod/Assets/*.png",
+      "Pod/Assets/*.mp3"
     ]
   }
 }

@@ -10,8 +10,8 @@ import CoreLocation
 import AVFoundation
 
 public class Tracker: NSObject, CLLocationManagerDelegate {
-    public var distance: Double = 25.0
-    public var radius: Double = 200.0
+    public var distance: Double = 20.0
+    public var radius: Double = 125.0
     public var accuracy: Double = kCLLocationAccuracyNearestTenMeters
     public var distanceFilter: Double = -1.0
     
@@ -21,9 +21,7 @@ public class Tracker: NSObject, CLLocationManagerDelegate {
     var player = AVAudioPlayer()
     var isPlaying: Bool = false
     
-    private var isUsingLocationUpdate = false
-    
-    // MARK: Initializations
+    // MARK: Initializations, getters, and setters
     required public override init() {
         super.init()
         locationManager.delegate = self
@@ -36,6 +34,14 @@ public class Tracker: NSObject, CLLocationManagerDelegate {
     
     private struct Constants {
         static let sharedManager = Tracker()
+    }
+    
+    public func getCurrentAccurary() -> Double {
+        return locationManager.desiredAccuracy
+    }
+    
+    public func getLocation() -> CLLocation {
+        return locationManager.location!
     }
     
     public func setupParameters(distance: Double?, radius: Double?, accuracy: CLLocationAccuracy?, distanceFilter: Double?) {
@@ -69,13 +75,12 @@ public class Tracker: NSObject, CLLocationManagerDelegate {
         if #available(iOS 9.0, *) {
             locationManager.allowsBackgroundLocationUpdates = true
         } else {
-            // on earlier verions, startMonitoringSignificantLocationChanges will be used
+            // on all other versions, slient audio will be played
         }
         
         clearAllMonitoredRegions()
         
         locationManager.startUpdatingLocation()
-        self.isUsingLocationUpdate = true
         
         // print debug string with all location manager parameters
         let locActivity = locationManager.activityType == .Other
@@ -94,38 +99,6 @@ public class Tracker: NSObject, CLLocationManagerDelegate {
             "Significant Location Change Enabled = \(locSigChangeAvailable)\n"
         
         print("Initialized Location Manager Information:\n" + locationManagerPermissionsDebugString + locationManagerParametersDebugString)
-    }
-    
-    public func changeTrackingMethod(iOS9: Bool, state: String) {
-        if iOS9 {
-            if state == "foreground" || state == "background" {
-                if !self.isUsingLocationUpdate {
-                    locationManager.stopMonitoringSignificantLocationChanges()
-                    locationManager.startUpdatingLocation()
-                    self.isUsingLocationUpdate = true
-                }
-            } else if state == "terminate" {
-                if self.isUsingLocationUpdate {
-                    locationManager.stopUpdatingLocation()
-                    self.isUsingLocationUpdate = false
-                }
-                locationManager.startMonitoringSignificantLocationChanges()
-            }
-        } else {
-            if state == "foreground" {
-                if !self.isUsingLocationUpdate {
-                    locationManager.stopMonitoringSignificantLocationChanges()
-                    locationManager.startUpdatingLocation()
-                    self.isUsingLocationUpdate = true
-                }
-            } else if state == "background" || state == "terminate" {
-                if self.isUsingLocationUpdate {
-                    locationManager.stopUpdatingLocation()
-                    self.isUsingLocationUpdate = false
-                }
-                locationManager.startMonitoringSignificantLocationChanges()
-            }
-        }
     }
     
     // MARK: Adding/Removing Locations
@@ -151,10 +124,9 @@ public class Tracker: NSObject, CLLocationManagerDelegate {
     
     public func removeLocation(name: String) {
         if self.locationDic.removeValueForKey(name) != nil {
-            print("remove location exists")
-            let monitoredRegion = locationManager.monitoredRegions
-            
-            for region in monitoredRegion {
+            let monitoredRegions = locationManager.monitoredRegions
+            print(locationManager.monitoredRegions)
+            for region in monitoredRegions {
                 if name == region.identifier {
                     locationManager.stopMonitoringForRegion(region)
                     print("stopped monitoring \(name)")
@@ -164,7 +136,7 @@ public class Tracker: NSObject, CLLocationManagerDelegate {
     }
     
     // MARK: Notifiying Users
-    public func notifyPeople(region: CLRegion) {
+    public func notifyPeople(region: CLRegion, locationWhenNotified: CLLocation) {
         print("you are close to region \(region)")
     }
     
@@ -193,7 +165,7 @@ public class Tracker: NSObject, CLLocationManagerDelegate {
                         self.locationDic[monitorRegion.identifier]?["notifiedForRegion"] = true
                         self.locationDic[monitorRegion.identifier]?["withinRegion"] = true
                         
-                        notifyPeople(monitorRegion)
+                        notifyPeople(monitorRegion, locationWhenNotified: lastLocation)
                     }
                 }
             }
@@ -216,6 +188,28 @@ public class Tracker: NSObject, CLLocationManagerDelegate {
         playAudio()
     }
     
+    public func locationManager(manager: CLLocationManager, didExitRegion region: CLRegion) {
+        print("did exit region \(region.identifier)")
+        self.locationDic[region.identifier]?["withinRegion"] = false
+        self.locationDic[region.identifier]?["notifiedForRegion"] = false
+        
+        if outOfAllRegions() {
+            locationManager.desiredAccuracy = self.accuracy
+            stopAudio()
+        }
+    }
+    
+    private func outOfAllRegions() -> Bool {
+        print("checking all regions")
+        for (_, regionInfo) in self.locationDic {
+            if regionInfo["withinRegion"] as! Bool{
+                return false
+            }
+        }
+        return true
+    }
+    
+    // MARK: Slient audio for background tracking
     private func playAudio() {
         if !isPlaying {
             let pathToAudio = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("silence", ofType: "mp3")!)
@@ -245,26 +239,5 @@ public class Tracker: NSObject, CLLocationManagerDelegate {
             print("stopped playing audio")
             isPlaying = false
         }
-    }
-    
-    public func locationManager(manager: CLLocationManager, didExitRegion region: CLRegion) {
-        print("did exit region \(region.identifier)")
-        self.locationDic[region.identifier]?["withinRegion"] = false
-        self.locationDic[region.identifier]?["notifiedForRegion"] = false
-        
-        if outOfAllRegions() {
-            locationManager.desiredAccuracy = self.accuracy
-            stopAudio()
-        }
-    }
-    
-    private func outOfAllRegions() -> Bool {
-        print("checking all regions")
-        for (_, regionInfo) in self.locationDic {
-            if regionInfo["withinRegion"] as! Bool{
-                return false
-            }
-        }
-        return true
     }
 }
